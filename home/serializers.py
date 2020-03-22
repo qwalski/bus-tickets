@@ -3,6 +3,9 @@ from rest_framework import serializers
 
 
 class TicketSerializer(serializers.ModelSerializer):
+    """
+    Serializer for ticket status and ticket owner details
+    """
     firstname = serializers.SerializerMethodField()
     lastname = serializers.SerializerMethodField()
     contact_number = serializers.SerializerMethodField()

@@ -20,6 +20,10 @@ from django.conf.urls import url
 from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 from rest_framework import permissions
+
+"""
+Swagger UI for all the APIs
+"""
 schema_view = get_schema_view(
     openapi.Info(
         title="List of API's",
